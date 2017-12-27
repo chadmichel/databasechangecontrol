@@ -11,8 +11,12 @@ namespace DatabaseLayer
     {
         [Key]
         public int ID { get; set; }
+        [StringLength(50)]
         public string Name { get; set; }
+        [StringLength(50)]
         public string User { get; set; }
+
+        [StringLength(50)]
         public string Project { get; set; }
         public decimal Minutes { get; set; }
         public DateTime Date { get; set; }
@@ -23,7 +27,5 @@ namespace DatabaseLayer
 
         public int Year { get; set; }
         public string ExternalId { get; set; }
-
-
     }
 }
